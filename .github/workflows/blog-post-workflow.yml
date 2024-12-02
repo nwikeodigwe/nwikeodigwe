@@ -32,10 +32,17 @@ jobs:
           BLOG_TITLE=$(jq -r '.[0].title' latest_blog.json)
           BLOG_CONTENT=$(jq -r '.[0].body_markdown' latest_blog.json)
           BLOG_DATE=$(jq -r '.[0].created_at' latest_blog.json)
+
+          TARGET_DIR=content
+
+          # Check if the directory exists; create it if not
+          if [ ! -d "$TARGET_DIR" ]; then
+            mkdir -p "$TARGET_DIR"
+          fi
           # Create a markdown file for the blog post
-          echo "# $BLOG_TITLE" > content/latest-blog.md
-          echo "Date: $BLOG_DATE" >> content/latest-blog.md
-          echo "$BLOG_CONTENT" >> content/latest-blog.md
+          echo "# $BLOG_TITLE" > $TARGET_DIR/latest-blog.md
+          echo "Date: $BLOG_DATE" >> $TARGET_DIR/latest-blog.md
+          echo "$BLOG_CONTENT" >> $TARGET_DIR/latest-blog.md
       - name: Commit and push new blog post
         run: |
           git config --global user.name "GitHub Actions"
