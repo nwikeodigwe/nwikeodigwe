@@ -23,4 +23,4 @@ jobs:
           ls -la
 
       - name: Install npm
-        run: npm init --all && npm install
+        run: npm init -y && npm install
