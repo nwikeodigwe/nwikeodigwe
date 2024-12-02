@@ -13,6 +13,10 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v3
 
+      - name: List directory
+        run: | 
+          ls -la
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -21,10 +25,6 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-
-      - name: list directory
-        run: | 
-          ls -la
 
       - name: Fetch latest blog post from Dev.to
         run: |
