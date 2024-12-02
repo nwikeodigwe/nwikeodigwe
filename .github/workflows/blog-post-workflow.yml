@@ -42,7 +42,7 @@ jobs:
           echo "# $BLOG_TITLE" > latest-blog.md
           echo "Date: $BLOG_DATE" >> latest-blog.md
           echo "$BLOG_CONTENT" >> latest-blog.md
-          echo "[Visit Dev.to](https://dev.to)" >> latest-blog.md
+          echo "[Visit Dev.to]($BLOG_URL)" >> latest-blog.md
       - name: Commit and push new blog post
         run: |
           git config --global user.name "GitHub Actions"
