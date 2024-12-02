@@ -21,3 +21,6 @@ jobs:
       - name: List repository
         run: |
           ls -la
+
+      - name: Install npm
+        run: npm install
