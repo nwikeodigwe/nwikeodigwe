@@ -34,24 +34,20 @@ jobs:
         run: |
           # Extract blog details from the JSON response and format them for your site
           BLOG_TITLE=$(jq -r '.[0].title' latest_blog.json)
-          BLOG_CONTENT=$(jq -r '.[0].body_markdown' latest_blog.json)
+          BLOG_CONTENT=$(jq -r '.[0].description' latest_blog.json)
           BLOG_DATE=$(jq -r '.[0].created_at' latest_blog.json)
+          BLOG_URL=(jq -r '.[0].url' latest_blog.json)
 
-          TARGET_DIR=content
-
-          # Check if the directory exists; create it if not
-          if [ ! -d "$TARGET_DIR" ]; then
-            mkdir -p "$TARGET_DIR"
-          fi
           # Create a markdown file for the blog post
-          echo "# $BLOG_TITLE" > $TARGET_DIR/latest-blog.md
-          echo "Date: $BLOG_DATE" >> $TARGET_DIR/latest-blog.md
-          echo "$BLOG_CONTENT" >> $TARGET_DIR/latest-blog.md
+          echo "# $BLOG_TITLE" > latest-blog.md
+          echo "Date: $BLOG_DATE" >> latest-blog.md
+          echo "$BLOG_CONTENT" >> latest-blog.md
+          echo "[Visit Dev.to](https://dev.to)" >> latest-blog.md
       - name: Commit and push new blog post
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           
-          git add content/latest-blog.md
+          git add latest-blog.md
           git commit -m "Add latest blog post from Dev.to"
           git push origin main
