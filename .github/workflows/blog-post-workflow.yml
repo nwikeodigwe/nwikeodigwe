@@ -36,7 +36,7 @@ jobs:
           BLOG_TITLE=$(jq -r '.[0].title' latest_blog.json)
           BLOG_CONTENT=$(jq -r '.[0].description' latest_blog.json)
           BLOG_DATE=$(jq -r '.[0].created_at' latest_blog.json)
-          BLOG_URL=(jq -r '.[0].url' latest_blog.json)
+          BLOG_URL=$(jq -r '.[0].url' latest_blog.json)
 
           # Create a markdown file for the blog post
           echo "# $BLOG_TITLE" > latest-blog.md
