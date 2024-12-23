@@ -1,9 +1,9 @@
 <h1 align="center">Hi 👋, I'm Nwike Odigwe</h1>
 <h3 align="center">A passionate software developer</h3>
 
-- 🔭 I’m currently working on [Relayapp](https://github.com/nwikeodigwe/relayapp)
+- 🔭 I’m currently working on [Urbanfitter](https://github.com/nwikeodigwe/urbanfitter)
 
-- 🌱 I’m currently learning **React Native**
+- 🌱 I’m currently learning **Implementing Continuous Integration and Delivery with Azure DevOps: Azure Pipelines**
 
 - 👯 I’m looking to collaborate on [Gamehub](https://github.com/nwikeodigwe/Game-dev)
 
