@@ -1,8 +1,8 @@
 <h1 align="center">Hi 👋, I'm Nwike Odigwe</h1>
 
-- 💬 Ask me about **DevOps**
+Ask me about **DevOps**
 
-- 📫 How to reach me **nwikeodigwe@outlook.com**
+reach me on **nwikeodigwe@outlook.com**
 
 <h3 align="left">Connect:</h3>
 <p align="left">
