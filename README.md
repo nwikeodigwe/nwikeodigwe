@@ -1,25 +1,8 @@
 <h1 align="center">Hi 👋, I'm Nwike Odigwe</h1>
-<h3 align="center">A passionate software developer</h3>
-
-- 🔭 I’m currently working on [Urbanfitter](https://github.com/nwikeodigwe/urbanfitter)
-
-- 🌱 I’m currently learning **Implementing Continuous Integration and Delivery with Azure DevOps: Azure Pipelines**
-
-- 👯 I’m looking to collaborate on [Gamehub](https://github.com/nwikeodigwe/Game-dev)
-
-- 🤝 I’m looking for help with **Language learning model**
-
-- 👨‍💻 All of my projects are available at [nwikeodigwe.com](nwikeodigwe.com)
-
-- 📝 I regularly write articles on [https://dev.to/nwikeodigwe](https://dev.to/nwikeodigwe)
 
 - 💬 Ask me about **DevOps**
 
 - 📫 How to reach me **nwikeodigwe@outlook.com**
-
-### Blogs posts
-<!-- BLOG-POST-LIST:START -->
-<!-- BLOG-POST-LIST:END -->
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
